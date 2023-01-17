@@ -1,4 +1,4 @@
-package org.sid.Billingservice.entities;
+package org.sid.Billingservice.models;
 
 import lombok.Data;
 

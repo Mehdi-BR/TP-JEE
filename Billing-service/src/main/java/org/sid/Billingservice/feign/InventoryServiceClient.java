@@ -1,7 +1,7 @@
-package org.sid.Billingservice.services;
+package org.sid.Billingservice.feign;
 
 
-import org.sid.Billingservice.entities.Product;
+import org.sid.Billingservice.models.Product;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.hateoas.PagedModel;
 import org.springframework.web.bind.annotation.GetMapping;

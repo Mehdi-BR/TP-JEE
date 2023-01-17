@@ -5,10 +5,7 @@ import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-import org.springframework.data.jpa.repository.JpaRepository;
-import org.springframework.data.rest.core.annotation.RepositoryRestResource;
-
-import java.util.List;
+import org.sid.Billingservice.models.Product;
 
 @Entity @Data @NoArgsConstructor @AllArgsConstructor
 public class ProductItem {
@@ -24,7 +21,3 @@ public class ProductItem {
 }
 
 
-@RepositoryRestResource
-interface ProductItemRepository extends JpaRepository<ProductItem,Long>{
-    List<ProductItem> findByBillId(Long billID);
-}

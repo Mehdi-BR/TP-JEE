@@ -1,4 +1,4 @@
-package org.sid.Billingservice.entities;
+package org.sid.Billingservice.models;
 
 import lombok.Data;
 
@@ -7,4 +7,6 @@ public class Product {
     private Long id;
     private String reference;
     private double price;
+
+    private double quantity;
  }

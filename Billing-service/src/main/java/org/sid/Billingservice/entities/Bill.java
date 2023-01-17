@@ -5,11 +5,9 @@ import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-import org.springframework.data.jpa.repository.JpaRepository;
-import org.springframework.data.rest.core.annotation.RepositoryRestResource;
+import org.sid.Billingservice.models.Customer;
 
 import java.util.Collection;
-import java.util.List;
 
 @Entity @Data @NoArgsConstructor @AllArgsConstructor
 public class Bill {
@@ -23,6 +21,3 @@ public class Bill {
 }
 
 
-@RepositoryRestResource
-interface BillRepository extends JpaRepository<Bill,Long> {
-}
